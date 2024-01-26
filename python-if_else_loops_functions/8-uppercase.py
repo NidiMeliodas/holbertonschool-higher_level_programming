@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 
-def uppercase(input_str):
-    for char in input_str:
-        upper_char = chr(ord(char) - ord('a') + ord('A'))
-        print(upper_char, end='')
+def uppercase(str):
 
-    # Move the 'else' block to be aligned with the 'for' loop
-    else:
-        print()
+    up_str = ""
+
+    for ch in str:
+        asc = ord(ch)
+        if asc >= 97 and asc <= 122:
+            up_str += chr(asc-32)
+        else:
+            up_str += ch
+
+    print("{}".format(up_str))
+    
