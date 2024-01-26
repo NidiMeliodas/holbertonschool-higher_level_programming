@@ -1,11 +1,4 @@
 #!/usr/bin/python3
-
-def print_last_digit(number):
-
-    if number < 0:
-        number *= -1
-
-    last = number % 10
-
-    print("{}".format(last), end='')
-    return last
+def islower(c):
+    if ord(c) > ord('a') and ord(c) < ord('z'):
+        return ord(c)
