@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"module to make a Rectangle"
+
+
 class Rectangle():
     "class to draw a rectangle using the Rectangle class"
     pass
