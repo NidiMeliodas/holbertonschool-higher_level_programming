@@ -4,3 +4,5 @@ python-import_modules/__pycache__/add_0.cpython-310.pyc
 python-import_modules/hidden_4.pyc
 *.cpython-310.pyc
 *-main.py
+python-input_output/*.json
+python-input_output/*.txt
