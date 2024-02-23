@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-Module for the 'Lookup' task of the Python - Inheritance project.
+Returns a list of object
 """
 
 
 def lookup(obj):
-	"""test"""
-	return dir(obj)
+    """returns the list of object"""
+    return dir(obj)
