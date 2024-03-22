@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-script that lists all states from the database hbtn_0e_0_usa
+script that takes in arguments and displays all values
+in the states table of hbtn_0e_0_usa where name matches the argument.
+But this time, write one that is safe from MySQL injections!
 """
 import MySQLdb
 import sys
@@ -18,7 +20,8 @@ if __name__ == "__main__":
         database=db
     )
     cursor = database.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY states.id")
+    cursor.execute("""SELECT * FROM states WHERE name LIKE BINARY %s
+                   ORDER BY states.id """, (sys.argv[4],))
 
     for row in cursor.fetchall():
         print(row)
